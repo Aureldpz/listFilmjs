@@ -45,7 +45,7 @@ const showMovie = (selector, image, title, date, id) => {
           <div class="card-body">
             <h5 class="card-title">${title}</h5>
             <p class="card-text">${date}</p>
-            <button class="buttonLearnMore btn btn-primary" onclick="showLearnMore('${id}')">Plus d'infos</button>
+            <button class="buttonLearnMore btn btn-primary" onclick="showLearnMore('${id}')">read more -></button>
           </div>
         </div>
       </div>
@@ -54,8 +54,6 @@ const showMovie = (selector, image, title, date, id) => {
   `
   
 }
-
-
 
 const showLearnMore =  async function (id) {
   const urlById = await fetch(`http://www.omdbapi.com/?i=${id}&page=2&apikey=5cc7788f`)
