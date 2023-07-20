@@ -1,0 +1,90 @@
+.jumbotron {
+  height: 500px;
+  
+  background-position-y: 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+h1 {
+  color: #5ff900;
+  text-align: center;
+  transition: color 1s;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  height: 100vh;
+  background-color: #474747;
+  font-family: Arial, sans-serif;
+}
+
+.jumbotron h1 {
+  font-family: serif;
+  margin-top: 11%;
+  color: #FFFF;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  
+}
+
+.jumbotron h5 {
+  color: #FFFF;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.jumbotron label {
+  color: #FFFF;
+  font-size: 17px;
+}
+
+.jumbotron form {
+  margin-top: 3.5%;
+}
+
+#searchInput {
+  width: 500px;
+  border-radius: 10px;
+  border: 1px black solid;
+}
+
+.buttonLearnMore {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  background-color: #cec0ab;
+  color:#FFF;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/*popup*/
+* {
+  box-sizing: border-box;
+}
+
+.popupShit {
+  position: fixed;
+  top: 0;
+  left: 0.0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.popup__container {
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+}
